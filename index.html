@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rawkaki — Row Art.</title>
+  <meta name="description" content="Portfolio of Rawkaki — painter, illustrator and digital creator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Rawkaki — home">
+      <img src="images/logo-240.jpg" alt="" class="logo-mark" width="36" height="46" />
+      <span class="logo-text">Rawkaki<span>.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="#photography">Photography</a>
+      <a href="#print-on-demand">Print On Demand</a>
+      <a href="#projects">Projects</a>
+      <a href="#bio">Bio</a>
+      <a href="#contact" class="btn btn-small">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home / landing -->
+    <section id="home" class="home">
+      <div class="brand-banner">
+        <img src="images/site_banner_transparent.png" alt="RAWKAKI" width="1200" height="160" />
+      </div>
+      <div class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Raw Art. Real Expression.</p>
+          <h1> A fun, raw, and professional art brand specializing in original photography and print-on-demand designs.</h1>
+        </div>
+        <figure class="hero-image">
+          <img src="images/landing_image-1200.jpg" alt="Black-and-white long-exposure light painting by Rawkaki" width="1200" height="801" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="bio" class="section">
+      <h2>Bio</h2>
+    </section>
+
+    <section id="photography" class="section">
+      <h2>Photography</h2>
+    </section>
+
+    <section id="print-on-demand" class="section">
+      <h2>Print On Demand</h2>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div>
+        <h2>Let’s Create Together</h2>
+        <p>Have a commission, collaboration or exhibition in mind? Send a message and I’ll get back within 48 hours.</p>
+        <ul class="contact-list">
+          <li>✉️ <a href="mailto:hello@rawkaki.art">hello@rawkaki.art</a></li>
+          <li>📍 Athens, Greece</li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.instagram.com/elenirokou_photography/" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <label>Name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Project type
+          <select name="type">
+            <option>Photography</option>
+            <option>Print On Demand</option>
+            <option>Project</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand"><img src="images/logo-240.jpg" alt="" class="logo-mark" width="28" height="36" /><span>© <span id="year"></span> Rawkaki. All artwork rights reserved.</span></p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
