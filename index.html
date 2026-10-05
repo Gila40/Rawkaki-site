@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rawkaki — Row Art.</title>
+  <title>Rawkaki — Raw Art.</title>
   <meta name="description" content="Portfolio of Rawkaki — painter, illustrator and digital creator." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -24,8 +25,7 @@
     <nav class="site-nav">
       <a href="#photography">Photography</a>
       <a href="#print-on-demand">Print On Demand</a>
-      <a href="#projects">Projects</a>
-      <a href="#bio">Bio</a>
+      <a href="#about">About</a>
       <a href="#contact" class="btn btn-small">Contact</a>
     </nav>
   </header>
@@ -41,26 +41,32 @@
           <p class="eyebrow">Raw Art. Real Expression.</p>
           <h1> A fun, raw, and professional art brand specializing in original photography and print-on-demand designs.</h1>
         </div>
-        <figure class="hero-image">
-          <img src="images/landing_image-1200.jpg" alt="Black-and-white long-exposure light painting by Rawkaki" width="1200" height="801" />
-        </figure>
+        <img class="hero-image" src="images/landing_image-1200.jpg" alt="Black-and-white long-exposure light painting by Rawkaki" width="1200" height="801" />
       </div>
-    </section>
-
-    <section id="bio" class="section">
-      <h2>Bio</h2>
     </section>
 
     <section id="photography" class="section">
       <h2>Photography</h2>
+      <div class="gallery" id="photography-gallery"></div>
     </section>
 
     <section id="print-on-demand" class="section">
       <h2>Print On Demand</h2>
+      <div class="gallery" id="pod-gallery"></div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="bio-text">
+        <h3>Rawkaki</h3>
+        <p>At rawkaki we believe that ordinary things are rarely ordinary when you take the time to really look at them.</p>
+        <p>Rawkaki is a photography and print-on-demand art project built around curiosity, observation, and a slightly different way of seeing everyday life. From quiet corners of nature and unexpected details to familiar scenes with a playful twist, our work is about finding something worth noticing in the things that usually pass us by.</p>
+        <p>Behind rawkaki is a photographer shaped by years of working across commercial photography, photojournalism, food, portraits, architecture, travel, and social media content. From photographing current events in the streets of Athens to chasing landscapes across 15 countries in Europe, the camera has always been a way of exploring, understanding, and expressing the world.</p>
+        <p>Some rawkaki pieces are inspired by nature. Others come from everyday objects, places, moods, or little moments that somehow deserve a second look. The common thread is simple: a familiar subject, seen from an unfamiliar angle.</p>
+        <p>Rawkaki is about curiosity, creativity, and finding the extraordinary hiding in plain sight.</p>
+        <p class="bio-tagline"><em>Look twice. You might see something new.</em></p>
+      </div>
+      <img class="about-artwork" src="images/about-artwork.png" alt="Hand-drawn blue flower stem illustration by Rawkaki" width="1600" height="500" loading="lazy" decoding="async" />
     </section>
 
     <!-- Contact -->
@@ -94,11 +100,19 @@
     </section>
   </main>
 
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">&#8249;</button>
+    <img class="lightbox-img" alt="" />
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&#8250;</button>
+  </dialog>
+
   <footer class="site-footer">
     <p class="footer-brand"><img src="images/logo-240.jpg" alt="" class="logo-mark" width="28" height="36" /><span>© <span id="year"></span> Rawkaki. All artwork rights reserved.</span></p>
     <a href="#home">Back to top ↑</a>
   </footer>
 
+  <script src="js/gallery-images.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
